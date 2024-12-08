@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote for John Doe</title>
+    <link rel="stylesheet" href="vote for john.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Vote for John Doe</h1>
+        <p>Your vote matters! Please fill out the form below to cast your vote for John Doe.</p>
+
+        <form id="voteForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="reason">Why are you voting for John Doe?</label>
+                <textarea id="reason" name="reason" placeholder="Share your reason (optional)"></textarea>
+            </div>
+            <div class="form-group checkbox">
+                <input type="checkbox" id="confirmation" name="confirmation" required>
+                <label for="confirmation">I confirm that my vote is genuine.</label>
+            </div>
+            <button type="submit" class="btn-primary">Submit Your Vote</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACM Chapter Voting Portal</title>
+    <link rel="stylesheet" href="ACM vote.css">
+</head>
+<body>
+    <header class="header">
+        <h1>ACM Chapter Election Voting Portal</h1>
+        <p>Vote for your chapter leaders and make your voice heard!</p>
+        
+    </header>
+
+    <main class="main-content">
+        <!-- Instructions Section -->
+        <section class="instructions">
+            <h2>How to Vote</h2>
+            <ol>
+                <li>Select one candidate for each position.</li>
+                <li>Review your choices carefully.</li>
+                <li>Submit your votes by clicking the "Submit Votes" button.</li>
+            </ol>
+        </section>
+
+        <!-- Voting Form Section -->
+        <section class="voting-form">
+            <h2>Cast Your Vote</h2>
+            <form id="votingForm">
+                <!-- Leader -->
+                <fieldset>
+                    <legend>Leader</legend>
+                    <label>
+                        <input type="radio" name="leader" value="John Doe" required>
+                        John Doe
+                    </label>
+                    <label>
+                        <input type="radio" name="leader" value="Jane Smith">
+                        Jane Smith
+                    </label>
+                </fieldset>
+
+                <!-- Secretary -->
+                <fieldset>
+                    <legend>Secretary</legend>
+                    <label>
+                        <input type="radio" name="secretary" value="Robert Brown" required>
+                        Robert Brown
+                    </label>
+                    <label>
+                        <input type="radio" name="secretary" value="Emily White">
+                        Emily White
+                    </label>
+                </fieldset>
+
+                <!-- Assistant Secretary -->
+                <fieldset>
+                    <legend>Assistant Secretary</legend>
+                    <label>
+                        <input type="radio" name="assistantSecretary" value="Michael Green" required>
+                        Michael Green
+                    </label>
+                    <label>
+                        <input type="radio" name="assistantSecretary" value="Sarah Black">
+                        Sarah Black
+                    </label>
+                </fieldset>
+
+                <!-- Treasurer -->
+                <fieldset>
+                    <legend>Treasurer</legend>
+                    <label>
+                        <input type="radio" name="treasurer" value="Chris Red" required>
+                        Chris Red
+                    </label>
+                    <label>
+                        <input type="radio" name="treasurer" value="Lisa Yellow">
+                        Lisa Yellow
+                    </label>
+                </fieldset>
+
+                <!-- Webmaster -->
+                <fieldset>
+                    <legend>Webmaster</legend>
+                    <label>
+                        <input type="radio" name="webmaster" value="Alex Blue" required>
+                        Alex Blue
+                    </label>
+                    <label>
+                        <input type="radio" name="webmaster" value="Taylor Purple">
+                        Taylor Purple
+                    </label>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-primary">Submit Votes</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Online Voting System . All rights reserved.</p>
+        <p>Made with ❤️ by DEEPJYOTI.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Own Online Voting Event</title>
+    <link rel="stylesheet" href="create election.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Create Your Own Online Voting Event</h1> 
+        <p>Design and launch your voting event in just a few steps!</p>
+        
+    </header>
+
+    <main class="main-content">
+        <!-- How It Works Section -->
+        <section class="steps">
+            <h2>How It Works</h2>
+            <div class="step-card">
+                <h3>Step 1</h3>
+                <p>Enter your event details such as title, description, and voting dates.</p>
+            </div>
+            <div class="step-card">
+                <h3>Step 2</h3>
+                <p>Add candidates or voting options with relevant details and images.</p>
+            </div>
+            <div class="step-card">
+                <h3>Step 3</h3>
+                <p>Customize settings such as voting restrictions, privacy, and eligibility criteria.</p>
+            </div>
+            <div class="step-card">
+                <h3>Step 4</h3>
+                <p>Generate and share your unique voting link and monitor results in real-time.</p>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="create-form">
+            <h2>Start Creating Your Voting Event</h2>
+            <form id="createVoteForm">
+                <!-- Event Details -->
+                <div class="form-group">
+                    <label for="eventTitle">Event Title</label>
+                    <input type="text" id="eventTitle" name="eventTitle" placeholder="e.g., Presidential Election" required>
+                </div>
+                <div class="form-group">
+                    <label for="eventDescription">Event Description</label>
+                    <textarea id="eventDescription" name="eventDescription" rows="4" placeholder="Briefly describe your voting event." required></textarea>
+                </div>
+
+                <!-- Voting Dates -->
+                <div class="form-group">
+                    <label for="startDate">Start Date</label>
+                    <input type="date" id="startDate" name="startDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="endDate">End Date</label>
+                    <input type="date" id="endDate" name="endDate" required>
+                </div>
+
+                <!-- Candidate Details -->
+                <fieldset>
+                    <legend>Candidate Details</legend>
+                    <div class="form-group">
+                        <label for="candidateName">Candidate Name</label>
+                        <input type="text" id="candidateName" name="candidateName" placeholder="Enter candidate name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="candidateDetails">Candidate Description</label>
+                        <textarea id="candidateDetails" name="candidateDetails" rows="3" placeholder="Enter candidate bio or manifesto" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="candidatePhoto">Candidate Photo</label>
+                        <input type="file" id="candidatePhoto" name="candidatePhoto" accept="image/*">
+                    </div>
+                    <button type="button" class="btn-secondary" id="addCandidate">Add Another Candidate</button>
+                </fieldset>
+
+                <!-- Eligibility -->
+                <div class="form-group">
+                    <label for="eligibility">Voter Eligibility Criteria</label>
+                    <textarea id="eligibility" name="eligibility" rows="4" placeholder="e.g., Minimum age, location, etc." required></textarea>
+                </div>
+
+                <!-- Privacy Settings -->
+                <div class="form-group">
+                    <label for="privacy">Privacy Settings</label>
+                    <select id="privacy" name="privacy" required>
+                        <option value="public">Public - Anyone can vote</option>
+                        <option value="private">Private - Invite-only voting</option>
+                    </select>
+                </div>
+
+                <!-- Additional Settings -->
+                <fieldset>
+                    <legend>Additional Settings</legend>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="allowMultipleVotes" id="allowMultipleVotes">
+                            Allow multiple votes per user
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="anonymousVoting" id="anonymousVoting">
+                            Enable anonymous voting
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-primary">Create Event</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Online Voting System. All rights reserved.</p>
+        <p>Made with ❤️ by DEEPJYOTI</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

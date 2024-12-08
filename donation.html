@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presidential Election 2024 - Donate</title>
+    <link rel="stylesheet" href="donation.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Presidential Election 2024</h1>
+        <p>Your support can make a difference!</p>
+        
+    </header>
+
+    <main class="donation-container">
+        <h2>Make a Donation</h2>
+        <form id="donationForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Donation Amount ($)</label>
+                <input type="number" id="amount" name="amount" placeholder="Enter amount" required min="1">
+            </div>
+            <div class="form-group">
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" name="message" rows="4" placeholder="Leave a message"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Donate Now</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Presidential Election. All rights reserved.</p>
+        <p>Made with  ❤️ by DEEPJYOTI</p>
+    </footer>
+</body>
+</html>

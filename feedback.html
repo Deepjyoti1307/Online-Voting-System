@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Online Voting System</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>Thank You for Voting!</h1>
+            <p>We value your opinion and would love to hear your thoughts.</p>
+            
+        </div>
+    </header>
+
+    <!-- Feedback Section -->
+    <main class="feedback-section">
+        <div class="container">
+            <h2>Your Feedback Matters</h2>
+            <p>Please take a moment to share your experience with us.</p>
+
+            <!-- Feedback Form -->
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label for="satisfaction">How satisfied are you with the voting process?</label>
+                    <select id="satisfaction" name="satisfaction" required>
+                        <option value="very_satisfied">Very Satisfied</option>
+                        <option value="satisfied">Satisfied</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="dissatisfied">Dissatisfied</option>
+                        <option value="very_dissatisfied">Very Dissatisfied</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Any suggestions for improvement?</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Write your suggestions here..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email (Optional):</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address (optional)">
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Feedback</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Online Voting System. All rights reserved.</p>
+            <p>Made with ❤️ by DEEPJYOTI</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f1f1;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, p {
+    margin-bottom: 1rem;
+}
+
+/* Header */
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* Main Content */
+.main-content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Steps Section */
+.steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.step-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 22%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.step-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.step-card h3 {
+    font-size: 1.6rem;
+    color: #007bff;
+}
+
+.step-card p {
+    font-size: 1rem;
+}
+
+/* Form Section */
+.create-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-form h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="file"] {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    color: #f5f1f1;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #007bff;
+}
+
+.btn-secondary:hover {
+    background-color: #007bff;
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: 1px solid #f5f1f1;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+/* Additional Settings */
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step-card {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #007bff;
+    color: #f5f1f1;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+.footer p:last-child {
+    margin-top: 0.5rem;
+}
+
+/* Form Success Message */
+.form-success {
+    background-color: #007bff;
+    color: #f5f1f1;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Form Error Message */
+.form-error {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: center;
+}
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,182 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Default light mode background */
+    color: #000000; /* Default light mode text color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header */
+header {
+    background-color: #007bff; /* Blue header background */
+    color: #ffffff; /* White text */
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header nav a {
+    margin: 0 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main Content */
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+#welcome {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#welcome h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+#welcome p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Election Cards */
+#dashboard {
+    margin-top: 2rem;
+}
+
+#dashboard h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.election-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.election-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.election-card h3 {
+    margin: 0 0 0.5rem;
+}
+
+.election-card p {
+    margin: 0 0 1rem;
+    color: #666;
+}
+
+.election-card .vote-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.election-card .vote-btn:hover {
+    background-color: #0056b3;
+}
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: #f5f1f1;
+    text-align: center;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+}
+
+
+
+
+/* General button styling */
+#CreateElection {
+    background-color: #007bff; /* Blue background */
+    color: #f5f1f1; /* White text */
+    padding: 0.8rem 2rem; /* Spacing around the text */
+    font-size: 1rem; /* Text size */
+    font-weight: bold; /* Bold text */
+    border: none; /* Remove border */
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: all 0.3s ease; /* Smooth animation */
+}
+
+/* Hover effects */
+#CreateElection:hover {
+    background-color: #f5f1f1; /* Off-white background */
+    color: #007bff; /* Blue text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Active state */
+#CreateElection:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduce shadow */
+}
+
+/* Styling the anchor tag to remove default styling */
+a {
+    text-decoration: none; /* Remove underline */
+}
+
+/* Basic Button Styling */
+#Feedback {
+    background-color: #007bff; /* Blue background */
+    color: #f5f1f1; /* Light text color */
+    padding: 12px 24px; /* Add padding for button */
+    font-size: 18px; /* Larger font size for readability */
+    font-weight: bold; /* Bold text */
+    border: none; /* No border */
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    text-decoration: none; /* Remove underline for link */
+    display: inline-block; /* Make button inline */
+}
+
+/* Button Hover Effect */
+#Feedback:hover {
+    background-color: #f5f1f1; /* Off-white background */
+    color: #007bff; /* Blue text *//* Darker blue on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Button Active State */
+#Feedback:active {
+    background-color: #004085; /* Dark blue when clicked */
+    transform: scale(1); /* Reset scale when clicked */
+}
+
